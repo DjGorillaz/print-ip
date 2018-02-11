@@ -8,7 +8,7 @@
 
 //Integral numbers
 template <typename T>
-typename std::enable_if<std::is_integral_v<T>>::type printIp(T&& v)
+typename std::enable_if<std::is_integral<T>::value>::type printIp(T&& v)
 {
     unsigned char* begin = reinterpret_cast<unsigned char*>(&v);
     unsigned char* curr = begin + sizeof(T) - 1;
@@ -42,11 +42,14 @@ typename std::enable_if<is_container<T>::value>::type printIp(T& t)
     for(const auto& val: t)
     {
         std::cout << d << val;
-        d = std::is_same_v<T, std::string> ? "" : "..";
+        d = std::is_same<T, std::string>::value ? "" : "..";
     }
     std::cout << std::endl;
 }
 
+//Print tuple
+template <std::size_t idx, std::size_t fin, typename ... Args>
+struct printTuple;
 
 //Tuple with same types
 template <typename T, typename ... Args>
@@ -61,14 +64,11 @@ struct is_same_tuple<std::tuple<T, T, Args...>>: is_same_tuple<std::tuple<T, Arg
 template <typename T>
 typename std::enable_if<is_same_tuple<T>::value>::type printIp(const T& t)
 {
-    constexpr std::size_t size = std::tuple_size_v<T>;
+    constexpr std::size_t size = std::tuple_size<T>::value;
     printTuple<0, size-1, T>{}(t);
 }
 
 //Print tuple
-template <std::size_t idx, std::size_t fin, typename ... Args>
-struct printTuple;
-
 template <std::size_t idx, std::size_t fin, typename ... Args>
 struct printTuple<idx, fin, std::tuple<Args...>>
 {
@@ -98,7 +98,7 @@ int main()
     printIp(char(-1));
     printIp(short(0));
     printIp(int(2130706433));
-    printIp(long long(8875824491850138409));
+    printIp(long(8875824491850138409));
     printIp(str);
     printIp(vec);
     printIp(list);
