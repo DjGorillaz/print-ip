@@ -12,7 +12,7 @@ script:
 deploy:
   - provider: pages
     skip-cleanup: true
-    local-dir: $TRAVIS_BUILD_DIR/html
+    local-dir: ./html
     github-token: $GITHUB_TOKEN
     keep-history: true
     on:
