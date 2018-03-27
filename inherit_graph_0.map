@@ -1,6 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="node2" href="$structis__container_3_01std_1_1list_3_01T_01_4_01_4.html" title="is_container\&lt; std::\llist\&lt; T \&gt; \&gt;" alt="" coords="133,5,264,46"/>
-<area shape="rect" id="node3" href="$structis__container_3_01std_1_1string_01_4.html" title="is_container\&lt; std::\lstring \&gt;" alt="" coords="133,70,264,111"/>
-<area shape="rect" id="node4" href="$structis__container_3_01std_1_1vector_3_01T_01_4_01_4.html" title="is_container\&lt; std::\lvector\&lt; T \&gt; \&gt;" alt="" coords="133,135,264,177"/>
-<area shape="rect" id="node5" href="$structis__same__tuple_3_01std_1_1tuple_3_01T_01_4_01_4.html" title="is_same_tuple\&lt; std\l::tuple\&lt; T \&gt; \&gt;" alt="" coords="131,201,267,242"/>
+<area shape="rect" id="node3" href="$structis__container_3_01std_1_1vector_3_01T_01_4_01_4.html" title="is_container\&lt; std::\lvector\&lt; T \&gt; \&gt;" alt="" coords="133,70,264,111"/>
+<area shape="rect" id="node4" href="$structis__same__tuple_3_01std_1_1tuple_3_01T_01_4_01_4.html" title="is_same_tuple\&lt; std\l::tuple\&lt; T \&gt; \&gt;" alt="" coords="131,135,267,177"/>
 </map>

@@ -106,8 +106,6 @@ Include dependency graph for main.cpp:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structis__container.html">is_container&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structis__container_3_01std_1_1string_01_4.html">is_container&lt; std::string &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structis__container_3_01std_1_1list_3_01T_01_4_01_4.html">is_container&lt; std::list&lt; T &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structis__container_3_01std_1_1vector_3_01T_01_4_01_4.html">is_container&lt; std::vector&lt; T &gt; &gt;</a></td></tr>
@@ -127,19 +125,24 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a8cea5022e81934f76b0ca104bb074dc7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a8cea5022e81934f76b0ca104bb074dc7"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_same<br class="typebreak"/>
+&lt; std::string, T &gt;::value &gt;<br class="typebreak"/>
+::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a8cea5022e81934f76b0ca104bb074dc7">printIp</a> (T &amp;&amp;v)</td></tr>
+<tr class="separator:a8cea5022e81934f76b0ca104bb074dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51c830e2afaa697d3d81e9f29cd354c2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a51c830e2afaa697d3d81e9f29cd354c2"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
 &lt; std::is_integral&lt; T &gt;::value &gt;<br class="typebreak"/>
 ::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a51c830e2afaa697d3d81e9f29cd354c2">printIp</a> (T &amp;&amp;v)</td></tr>
 <tr class="separator:a51c830e2afaa697d3d81e9f29cd354c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06517081eaa60edd3c29b4096295a0e4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a06517081eaa60edd3c29b4096295a0e4"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structis__container.html">is_container</a><br class="typebreak"/>
-&lt; T &gt;::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a06517081eaa60edd3c29b4096295a0e4">printIp</a> (T &amp;t)</td></tr>
-<tr class="separator:a06517081eaa60edd3c29b4096295a0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd8209d68980630e1e3176052db0632c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:afd8209d68980630e1e3176052db0632c"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structis__same__tuple.html">is_same_tuple</a><br class="typebreak"/>
-&lt; T &gt;::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="main_8cpp.html#afd8209d68980630e1e3176052db0632c">printIp</a> (const T &amp;t)</td></tr>
-<tr class="separator:afd8209d68980630e1e3176052db0632c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8938ba013c459f9d21d79e320d451519"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a8938ba013c459f9d21d79e320d451519"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structis__container.html">is_container</a><br class="typebreak"/>
+&lt; T &gt;::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a8938ba013c459f9d21d79e320d451519">printIp</a> (T &amp;&amp;t)</td></tr>
+<tr class="separator:a8938ba013c459f9d21d79e320d451519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a369508ddb94f77431ee83dd8a1b38ca8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a369508ddb94f77431ee83dd8a1b38ca8"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structis__same__tuple.html">is_same_tuple</a><br class="typebreak"/>
+&lt; T &gt;::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a369508ddb94f77431ee83dd8a1b38ca8">printIp</a> (T &amp;&amp;t)</td></tr>
+<tr class="separator:a369508ddb94f77431ee83dd8a1b38ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -152,6 +155,24 @@ Functions</h2></td></tr>
           <td class="memname">int main </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8cea5022e81934f76b0ca104bb074dc7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;std::is_same&lt;std::string, T&gt;::value&gt;::type printIp </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -177,7 +198,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a06517081eaa60edd3c29b4096295a0e4"></a>
+<a class="anchor" id="a8938ba013c459f9d21d79e320d451519"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -186,7 +207,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">std::enable_if&lt;<a class="el" href="structis__container.html">is_container</a>&lt;T&gt;::value&gt;::type printIp </td>
           <td>(</td>
-          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramtype">T &amp;&amp;&#160;</td>
           <td class="paramname"><em>t</em></td><td>)</td>
           <td></td>
         </tr>
@@ -195,7 +216,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="afd8209d68980630e1e3176052db0632c"></a>
+<a class="anchor" id="a369508ddb94f77431ee83dd8a1b38ca8"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -204,7 +225,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">std::enable_if&lt;<a class="el" href="structis__same__tuple.html">is_same_tuple</a>&lt;T&gt;::value&gt;::type printIp </td>
           <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramtype">T &amp;&amp;&#160;</td>
           <td class="paramname"><em>t</em></td><td>)</td>
           <td></td>
         </tr>
@@ -216,7 +237,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 11 2018 17:14:15 for print_ip by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 27 2018 11:04:34 for print_ip by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
