@@ -100,7 +100,7 @@ int main()
     printIp(char(-1));
     printIp(short(0));
     printIp(int(2130706433));
-    printIp(long long(8875824491850138409));
+    printIp(long(8875824491850138409));
     printIp(std::move(str));
     printIp(std::move(vec));
     printIp(std::move(list));
